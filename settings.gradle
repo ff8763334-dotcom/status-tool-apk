@@ -1,0 +1,2 @@
+rootProject.name = "StatusTool"
+include ':app'
