@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_margin="4dp"
+    android:background="@color/surface">
+
+    <ImageView
+        android:id="@+id/thumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/videoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:background="#88000000"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        android:padding="3dp"
+        android:text="▶️ فيديو"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#AA000000"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="⬇️ حفظ" />
+</FrameLayout>
