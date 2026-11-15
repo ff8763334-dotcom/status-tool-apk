@@ -21,6 +21,12 @@ jobs:
       - name: Accept Android SDK licenses
         run: yes | sdkmanager --licenses || true
 
+      - name: Download Gradle 8.4
+        run: |
+          wget -q https://services.gradle.org/distributions/gradle-8.4-bin.zip -O gradle.zip
+          unzip -q gradle.zip
+          echo "$PWD/gradle-8.4/bin" >> $GITHUB_PATH
+
       - name: Build APK
         run: gradle assembleDebug --no-daemon
 
